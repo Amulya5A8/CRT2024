@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+int a=1,n;
+scanf("%d",&n);
+while(a>=n)
+{
+    // Write C code here
+    printf("%d",a);
+    a=a+2;
+}
+
+    return 0;
+}
