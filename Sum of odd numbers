@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int bill,s=0,d;
+    scanf("%d",&bill);
+    while(bill>0){
+        d=bill%10;
+        if(d%2!=0){
+            s=s+d;
+        }
+        bill=bill/10;  
+    }
+    printf("%d",s);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
