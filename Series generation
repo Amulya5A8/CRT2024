@@ -1,0 +1,16 @@
+int main() {
+    int n,m=7;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        printf("%d ",m);
+        if(i%2==0){
+            m=m-2;
+        }
+        else{
+            m=m+3;
+        }
+        
+    }
+     /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
