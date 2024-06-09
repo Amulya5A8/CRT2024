@@ -1,0 +1,108 @@
+Repeatedly find the sum of digits of a number until it becomes a single-digit number (say sod). Then compute the factorial of sod and print it.
+
+Input Format
+
+One line containing an integer "n" denoting number
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+One number denoting the factorial of single digit
+
+Sample Input 0
+
+23
+Sample Output 0
+
+120
+Explanation 0
+
+Sum of digits: 23 --> 2+3 = 5 Factorial of 5 is 120
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+
+
+// Function to calculate the sum of digits of a number
+
+int sumOfDigits(int num) {
+
+    int sum = 0;
+
+    while (num > 0) {
+
+        sum += num % 10;
+
+        num /= 10;
+
+    }
+
+    return sum;
+
+}
+
+// Function to repeatedly find the sum of digits until it is a single digit
+
+int singleDigitSum(int num) {
+
+    while (num >= 10) {
+
+        num = sumOfDigits(num);
+
+    }
+
+    return num;
+
+}
+
+// Function to calculate factorial of a number
+
+int factorial(int num) {
+
+    int result = 1;
+
+    for (int i = 1; i <= num; i++) {
+
+        result *= i;
+
+    }
+
+    return result;
+
+}
+
+int main() {
+
+    int num;
+
+    // Read input
+
+    scanf("%d", &num);
+
+    // Get the single-digit sum
+
+    int singleDigit = singleDigitSum(num);
+
+    // Calculate the factorial of the single-digit sum
+
+    int result = factorial(singleDigit);
+
+    // Print the result
+
+    printf("%d\n", result);
+
+    return 0;
+
+}
+
+    
+
+
