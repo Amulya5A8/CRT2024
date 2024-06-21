@@ -52,22 +52,26 @@ Rate This Challenge:
 
     
 More
- 
-1
-import java.io.*;
-2
+ import java.io.*;
 import java.util.*;
-3
-​
-4
+
 public class Solution {
-5
-​
-6
+
     public static void main(String[] args) {
-7
+        Scanner s=new Scanner(System.in);
+        int a,l,b;
+        float r;
+        a=s.nextInt();
+        l=s.nextInt();
+        b=s.nextInt();
+        r=s.nextFloat();
+        int sa=a*a;
+        System.out.println(sa);
+        int ra=l*b;
+        System.out.println(ra);
+        float ca=(float)3.14*r*r;
+        System.out.printf("%.2f",ca);
+        
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-8
     }
-9
 }
