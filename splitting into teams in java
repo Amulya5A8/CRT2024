@@ -48,21 +48,22 @@ Rate This Challenge:
     
 More
  
-1
 import java.io.*;
-2
 import java.util.*;
-3
-​
-4
+
 public class Solution {
-5
-​
-6
+
     public static void main(String[] args) {
-7
+        Scanner s=new Scanner(System.in);
+        int n,t;
+        n=s.nextInt();
+        t=s.nextInt();
+        int et=n/t;
+        int lo=n%t;
+        System.out.println("The number of students in each team is "+et+" and left out is "+lo);
+
+
+        
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-8
     }
-9
 }
