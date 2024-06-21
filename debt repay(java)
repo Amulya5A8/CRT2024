@@ -42,21 +42,32 @@ Rate This Challenge:
     
 More
  
-1
+
+}
+
+
+
 import java.io.*;
-2
 import java.util.*;
-3
-​
-4
+
 public class Solution {
-5
-​
-6
+
     public static void main(String[] args) {
-7
+        Scanner s=new Scanner(System.in);
+        int p,i,y;
+        p=s.nextInt();
+        i=s.nextInt();
+        y=s.nextInt();
+        float i1,i2,i3,i4;
+        i1=(float)(p*y*i)/100;
+        System.out.printf("%.2f\n",i1);
+        i2=(float)i1+p;
+        System.out.printf("%.2f\n",i2);
+        i3=(float)i1*2/100;
+        System.out.printf("%.2f\n",i3);
+        i4=(float)i2-i3;
+        System.out.printf("%.2f\n",i4);
+        
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-8
     }
-9
 }
