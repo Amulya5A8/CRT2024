@@ -1,0 +1,12 @@
+import java.util.*;
+import java.lang.String;
+class TestA
+{
+final int a=111;
+public static void main(String[] args)
+{
+TestA t1=new TestA();
+System.out.println(t1.a);
+System.out.println(t1.a);
+}
+}
