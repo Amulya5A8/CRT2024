@@ -1,0 +1,11 @@
+import java.util.*;
+import java.lang.String;
+class F
+{
+public static void main(String[] args)throws InterruptedException
+{
+System.out.println("Amulya");
+Thread.sleep(3000);
+System.out.println("Koushik");
+}
+}
